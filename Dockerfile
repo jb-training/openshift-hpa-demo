@@ -1,3 +1,9 @@
-FROM openshift/php-56-centos7:latest
-COPY index.php /var/www/html/index.php
-RUN chmod a+rx index.php
+FROM rhscl/php-56-rhel7
+
+MAINTAINER Your Name "your-email@example.com"
+
+EXPOSE 8000
+
+COPY . /opt/app-root/src
+
+CMD /bin/bash -c 'php -S 0.0.0.0:8000'
