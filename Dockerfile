@@ -1,4 +1,5 @@
-FROM rhscl/php-56-rhel7
+#FROM rhscl/php-56-rhel7
+FROM docker.io/openshift/php-56-centos7
 
 MAINTAINER Your Name "your-email@example.com"
 
